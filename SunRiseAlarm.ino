@@ -12,6 +12,7 @@
 // Initialization
 int fadeTime = 30; // How long the light will fade to max
 int uled = 9; // Set pinout with with PWM
+
 //not necessary to change time here, change in matrix!!
 int setHour = 6; // hours to wake (military time)
 int setMin = 30; // minute to wake
@@ -54,7 +55,7 @@ void setup()
     EEPROM.write(1, 0);
     changeMode = EEPROM.read(1);
    }
-   if (newTime < 0 || newTime > 4){
+   if (newTime < 0 || newTime > sizeof(timeMatrix)){
     EEPROM.write(2, 0);
     newTime = EEPROM.read(2);
    }
@@ -84,7 +85,6 @@ void setup()
     EEPROM.write(2, newTime);
     delay(500);
     showTime();
-
    }
 //set new Time 
   setHour = timeMatrix[newTime][1];
@@ -122,7 +122,8 @@ void showTime(){
 void loop()
 {
   t = rtc.getTime(); // Make a time class called 't'
-  
+
+
   // Send Day-of-Week
   Serial.print(rtc.getDOWStr());
   Serial.print(" ");
