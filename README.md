@@ -1,7 +1,7 @@
 # SunRiseAlarm
 
 This Arduino Script is based on a Script by Austin Tarango (YouTube). For further information, watch his video.
-It can control an (external) LED with a transistor to wake you up easily in the morning, just like a real sunrise.
+It can control an (external) LED(-strip) with a transistor to wake you up easily in the morning, just like a real sunrise.
 I have improved Austin's script by making it able to change the wake-up time by turning the arduino on and off, furthermore, you can now use the LEDs also as nightlight.
 
 Code:
