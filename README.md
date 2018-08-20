@@ -5,12 +5,12 @@ It can control an (external) LED(-strip) with a transistor to wake you up easily
 I have improved Austin's script by making it able to change the wake-up time by turning the arduino on and off, furthermore, you can now use the LEDs also as nightlight.
 
 Code:
-To change output PIN - change the "uled" variable to desired pin
-To change wakeup-times (Start of LEDs) - change times in "timeMatrix" - not at setHour and setMin!!!! - "timeMatrix" can also be extended with additional Wakup-Options if required
-To change fade-time (until you wake up) - change variable "fadeTime"
+To change output PIN - change the "uled" variable to desired pin.
+To change wakeup-times (Start of LEDs) - change times in "timeMatrix" - not at setHour and setMin!!!! - "timeMatrix" can also be extended with additional Wakup-Options if required.
+To change fade-time (until you wake up) - change variable "fadeTime".
 
 User Instructions:
-The Arduino basically has 3 states: "Nightlight on", "Show Wakup-Time" and "Change Wakeup-Time"
+The Arduino basically has 3 states: "Nightlight on", "Show Wakup-Time" and "Change Wakeup-Time".
 
 By switching the arduino OFF and ON again, it either turns the Night-Light on or it shows the Wakup-Time by blinking:
 1 Blink = Time Setting with Index 0 in "timeMatrix"
