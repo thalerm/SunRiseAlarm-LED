@@ -10,15 +10,15 @@ To change wakeup-times (Start of LEDs) - change times in "timeMatrix" - not at s
 To change fade-time (until you wake up) - change variable "fadeTime".
 
 User Instructions:
-The Arduino basically has 3 states: "Nightlight on", "Show Wakup-Time" and "Change Wakeup-Time".
+The Arduino basically has 3 states: "Nightlight on", "Show Wakeuptime" and "Change Wakeuptime".
 
-By switching the arduino OFF and ON again, it either turns the Night-Light on or it shows the Wakup-Time by blinking:
+By switching the arduino OFF and ON again, it either turns the Nightlight on or it shows the Wakuptime by blinking:
 1 Blink = Time Setting with Index 0 in "timeMatrix"
 2 Blinks = Time Setting with Index 1 in "timeMatrix"
 3 Blinks = Time Setting with Index 2 in "timeMatrix"
 ...
 
-If you turn OFF the Arduino within 3 seconds after the nightlight began to shine or after the last blink in "Show Wakeup-time" mode - your Arduino will be in "Change Wakeup-Time" mode, the LED now will blink fast for approx. 4 seconds. If you turn OFF the Arduino within this period, the next Time Setting in "timeMatrix" will be selected. You can turn it on and off as often as you wish in this mode - every time you turn it off, the Wakup-Time Setting will cycle through the preset Times in "timeMatrix" (for ONE index!). If you have the desired Time, just wait for 4 seconds and the fast blinking will change to slow blinking after a short break - this indicates the new Time again, as described in the paragraph above.
+If you turn OFF the Arduino within 3 seconds after the nightlight began to shine or after the last blink in "Show Wakeuptime" mode - your Arduino will be in "Change Wakeuptime" mode, the LED now will blink fast for approx. 4 seconds. If you turn OFF the Arduino within this period, the next Time Setting in "timeMatrix" will be selected. You can turn it on and off as often as you wish in this mode - every time you turn it OFF, the Wakup-Time Setting will cycle through the preset Times in "timeMatrix" (for ONE index!). If you have the desired Time, just wait for 4 seconds and the fast blinking will change to slow blinking after a short break - this indicates the new Time again, as described in the paragraph above.
 
 EXAMPLE:
 Turn ON Arduino
